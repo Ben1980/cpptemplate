@@ -1,5 +1,5 @@
 #include "lib.h"
 
 int main() {
-    printHelloWorld(); 
+    Library::PrintHelloWorld(); 
 }
