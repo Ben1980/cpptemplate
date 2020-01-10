@@ -2,7 +2,7 @@
 #define LIB_H
 
 namespace Library {
-  printHelloWorld();
+  PrintHelloWorld();
 }
 
 #endif
