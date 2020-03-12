@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run: $VCPKG_ROOT
-      - run: ./vcpkg install fmt doctest
+      - run: ./../vcpkg/vcpkg install fmt doctest
       - run: mkdir -p build && cd build
       - run: cmake ..
       - run: cmake --build . --config Release
