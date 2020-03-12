@@ -5,6 +5,6 @@ jobs:
       - image: gcc:latest
     steps:
       - checkout
-      - run: mkdir -p buil && cd build
+      - run: mkdir -p build && cd build
       - run: cmake ..
       - run: cmake --build . --config Release
