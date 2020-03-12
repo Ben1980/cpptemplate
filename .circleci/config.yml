@@ -5,7 +5,7 @@ jobs:
       - image: dockerben/cpptemplate:latest
     steps:
       - checkout
-      - run: ls
+      - run: $VCPKG_ROOT
       - run: ./vcpkg install fmt doctest
       - run: mkdir -p build && cd build
       - run: cmake ..
