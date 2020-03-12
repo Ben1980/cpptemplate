@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: gcc:latest
+      - image: dockerben/cpptemplate:latest
     steps:
       - checkout
       - run: mkdir -p build && cd build
