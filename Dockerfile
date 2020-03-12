@@ -2,9 +2,11 @@ FROM debian:stable
 
 RUN apt-get update -y && apt-get upgrade -y && \
     apt-get install -y --no-install-recommends git \
+	openssh-client \
 	curl \
 	gcc \
 	g++ \
+	clang \
 	build-essential \
 	cmake \
 	unzip \
@@ -19,12 +21,6 @@ RUN apt-get update -y && apt-get upgrade -y && \
 RUN git clone https://github.com/microsoft/vcpkg.git && \
 	./vcpkg/bootstrap-vcpkg.sh && \
 	sudo ./vcpkg/vcpkg integrate install
-
-RUN ./vcpkg/vcpkg install doctest \
-	fmt
-
-RUN rm -r /vcpkg/downloads && \
-	rm -r /vcpkg/buildtrees
 
 RUN export CMAKE_TOOLCHAIN_FILE="/vcpkg/scripts/buildsystems/vcpkg.cmake"
 	
