@@ -8,6 +8,4 @@ jobs:
       - run: ./../../vcpkg/vcpkg install fmt doctest
       - run: mkdir -p build
       - run: cmake
-      - run: cd build && \
-             cmake .. && \
-             cmake --build . --config Release
+      - run: ls && cd build && ls && cmake .. && cmake --build . --config Release
