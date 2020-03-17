@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run: ls && cd .. && ls && cd .. && ls
       - run: $VCPKG_ROOT
-      - run: ./../vcpkg/vcpkg install fmt doctest
+      - run: ./../../vcpkg/vcpkg install fmt doctest
       - run: mkdir -p build && cd build
       - run: cmake ..
       - run: cmake --build . --config Release
