@@ -22,7 +22,7 @@ RUN git clone https://github.com/microsoft/vcpkg.git && \
 	./vcpkg/bootstrap-vcpkg.sh && \
 	sudo ./vcpkg/vcpkg integrate install
 
-ENV VCPKG_ROOT /vcpkg
-ENV CMAKE_TOOLCHAIN_FILE /vcpkg/scripts/buildsystems/vcpkg.cmake
+ENV VCPKG_ROOT /vcpkg/
+ENV CMAKE_TOOLCHAIN_FILE ${VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake
 
 	
