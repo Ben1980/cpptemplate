@@ -2,7 +2,7 @@
 #define LIB_H
 
 namespace Library {
-  PrintHelloWorld();
+  void PrintHelloWorld();
 };
 
 TEST_SUITE("Library Test Suite") {

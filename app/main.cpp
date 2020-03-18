@@ -3,7 +3,7 @@
 #include <doctest/doctest.h>
 #include "../lib/lib.h"
 
-int main() {
+int main(int argc, char** argv) {
     doctest::Context context;
     context.applyCommandLine(argc, argv);
 
