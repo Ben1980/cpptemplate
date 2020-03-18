@@ -3,9 +3,9 @@ jobs:
   build:
     docker:
       - image: dockerben/cpptemplate:latest
+
     steps:
       - checkout
       - run: ./../../vcpkg/vcpkg install fmt doctest
       - run: mkdir -p build
-      - run: ${VCPKG_ROOT}
-      - run: ls && cd build && ls && cmake -DCMAKE_TOOLCHAIN_FILE=${CMAKE_TOOLCHAIN_FILE} .. && cmake --build . --config Release
+      - run: ls && cd build && ls && cmake -DCMAKE_TOOLCHAIN_FILE=/vcpkg/scripts/buildsystems/vcpkg.cmake .. && cmake --build . --config Release
