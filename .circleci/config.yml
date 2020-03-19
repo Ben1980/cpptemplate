@@ -8,4 +8,4 @@ jobs:
       - checkout
       - run: ./../../vcpkg/vcpkg install fmt doctest
       - run: mkdir -p build
-      - run: ls && cd build && ls && cmake -DCMAKE_TOOLCHAIN_FILE=/vcpkg/scripts/buildsystems/vcpkg.cmake .. && cmake --build . --config Release
+      - run: cd build && cmake -DCMAKE_TOOLCHAIN_FILE=/vcpkg/scripts/buildsystems/vcpkg.cmake .. && cmake --build . --config Release
