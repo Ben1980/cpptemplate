@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.12)
-project(------LIBNAME-------)
+project(LIBNAME)
 
 set(SOURCE lib.h lib.cpp)
 add_library(${PROJECT_NAME} ${SOURCE})
