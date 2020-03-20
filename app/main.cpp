@@ -9,9 +9,11 @@ int main(int argc, char** argv) {
 
     int res = context.run();
 
-    Library::PrintHelloWorld();
+    // if (context.shouldExit()) {
+    //     return res;
+    // }
 
-    if (context.shouldExit()) {
-        return res;
-    }
+    Library::PrintHelloWorld("Hello World!");
+
+    return res;
 }

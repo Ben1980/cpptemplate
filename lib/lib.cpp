@@ -1,7 +1,8 @@
 #include "lib.h"
 #include <iostream>
 
-void Library::PrintHelloWorld()
+bool Library::PrintHelloWorld(const std::string& str)
 {
-    std::cout << "Hello World!" << '\n';
+    std::cout << str << '\n';
+    return str.empty() ? false : true;
 }
