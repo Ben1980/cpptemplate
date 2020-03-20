@@ -17,6 +17,8 @@ RUN apt-get update -y && apt-get upgrade -y && \
 	tar \
 	gzip \
 	sudo \
+        doxygen \
+        graphviz \
 	ca-certificates
 
 RUN apt-get autoclean && \
