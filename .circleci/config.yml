@@ -9,3 +9,4 @@ jobs:
       - run: ./../../vcpkg/vcpkg install fmt doctest
       - run: mkdir -p build
       - run: cd build && cmake -DCMAKE_TOOLCHAIN_FILE=/vcpkg/scripts/buildsystems/vcpkg.cmake .. && cmake --build . --config Release
+      - run: doxygen Doxyfile
