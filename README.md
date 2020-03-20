@@ -1,4 +1,4 @@
-# cpptemplate
+# cpptemplate {#mainpage}
 > Short blurb about what your product does.
 
 <!-- PROJECT SHIELDS -->
@@ -15,7 +15,7 @@
 
 One to two paragraph statement about your product and what it does.
 
-![](header.png)
+![](images/header.png)
 
 ## Installation
 
