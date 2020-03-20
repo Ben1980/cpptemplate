@@ -1,18 +1,33 @@
 var indexSectionsWithContent =
 {
-  0: "c",
-  1: "c"
+  0: "acdhilmprst",
+  1: "l",
+  2: "cdlmr",
+  3: "mpt",
+  4: "i",
+  5: "acdhps",
+  6: "ct"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "pages"
+  1: "namespaces",
+  2: "files",
+  3: "functions",
+  4: "variables",
+  5: "defines",
+  6: "pages"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Pages"
+  1: "Namespaces",
+  2: "Files",
+  3: "Functions",
+  4: "Variables",
+  5: "Macros",
+  6: "Pages"
 };
 
