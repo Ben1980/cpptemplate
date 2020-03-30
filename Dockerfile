@@ -1,5 +1,7 @@
 FROM debian:stable
 
+MAINTAINER Benjamin Mahr, <ben.mahr@gmail.com>
+
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -y && apt-get upgrade -y && \
@@ -17,13 +19,14 @@ RUN apt-get update -y && apt-get upgrade -y && \
 	tar \
 	gzip \
 	sudo \
-        doxygen \
-        graphviz \
-	ca-certificates
-
-RUN apt-get autoclean && \
-    apt-get autoremove && \
-    apt-get clean
+    	doxygen \
+    	graphviz \
+	python3 \
+	ca-certificates && \
+	apt-get autoclean && \
+    	apt-get autoremove && \
+    	apt-get clean && \
+	rm -rf /var/lib/apt/lists/*
 
 ENV VCPKG_ROOT /vcpkg
 ENV CMAKE_TOOLCHAIN_FILE ${VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake
