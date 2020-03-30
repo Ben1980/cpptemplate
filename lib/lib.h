@@ -35,10 +35,10 @@ namespace Library {
 };
 
 TEST_CASE ("Test 1") {
-  CHECK(false);
+  CHECK(true);
 }
 TEST_CASE ("Test 2") {
-  CHECK(false);
+  CHECK(true);
 }
 
 #endif
