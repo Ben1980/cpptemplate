@@ -76,5 +76,5 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 5. Create a new Pull Request
 
 <!-- Markdown link & img dfn's -->
-[circleci-url](https://circleci.com/gh/Ben1980/cpptemplate)
-[circleci-image](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)
+[circleci-url]: (https://circleci.com/gh/Ben1980/cpptemplate)
+[circleci-image]: (https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)
