@@ -10,6 +10,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Build Status][circleci-image]][circleci-url]
+[![Generate Documentation][doc-image]]
 
 One to two paragraph statement about your product and what it does.
 
@@ -78,3 +79,4 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 <!-- Markdown link & img dfn's -->
 [circleci-url]: (https://circleci.com/gh/Ben1980/cpptemplate)
 [circleci-image]: (https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)
+[doc-image]: (https://github.com/Ben1980/cpptemplate/workflows/Generate%20Documentation/badge.svg)
