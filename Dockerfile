@@ -19,8 +19,6 @@ RUN apt-get update -y && apt-get upgrade -y && \
 	tar \
 	gzip \
 	sudo \
-    	doxygen \
-    	graphviz \
 	python3 \
 	ca-certificates && \
 	apt-get autoclean && \
