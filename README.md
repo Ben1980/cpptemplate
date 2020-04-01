@@ -9,9 +9,9 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-<!--[![Build Status][circleci-image]][circleci-url]
-[![Generate Documentation][doc-image]]-->
+
 [![Build Status](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/Ben1980/cpptemplate)
+![Generate Documentation](https://github.com/Ben1980/cpptemplate/workflows/Generate%20Documentation/badge.svg)
 
 One to two paragraph statement about your product and what it does.
 
