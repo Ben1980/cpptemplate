@@ -3,7 +3,9 @@ jobs:
   build:
     docker:
       - image: dockerben/cpptemplate:latest
-
+    branches:
+      ignore:
+        - gh-pages
     steps:
       - checkout
       - run: ./../../vcpkg/vcpkg install fmt doctest
