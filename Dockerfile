@@ -33,5 +33,7 @@ RUN git clone https://github.com/microsoft/vcpkg.git && \
 	.${VCPKG_ROOT}/bootstrap-vcpkg.sh -disableMetrics && \
 	sudo .${VCPKG_ROOT}/vcpkg integrate install
 
+RUN python3 --version
+
 ENV DEBIAN_FRONTEND teletype
 	
