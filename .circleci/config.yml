@@ -21,7 +21,7 @@ jobs:
       - image: dockerben/cpptemplate:latest
     steps:
       - attach_workspace:
-          at: /tmp/.
+          at: .
       - run: mkdir -p Test && ls
       - run: ctest --no-compress-output -T Test || true
       - run: python3 buildutils/ctest2JUnit.py build buildutils/CTest2JUnit.xsl > build/Test/results.xml #https://stackoverflow.com/questions/6329215/how-to-get-ctest-results-in-hudson-jenkins
