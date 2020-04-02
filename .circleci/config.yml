@@ -6,7 +6,8 @@ jobs:
     steps:
       - checkout
       - run: ./../../vcpkg/vcpkg install fmt doctest
-      - run: mkdir -p build
+      - run: mkdir -p build && mv buildutils build/buildutils
+      - run: cd build && ls && cd buildutils && ls
       - run: cd build && cmake -DCMAKE_TOOLCHAIN_FILE=/vcpkg/scripts/buildsystems/vcpkg.cmake .. && cmake --build . --config Release
       - persist_to_workspace:
           root: .
@@ -21,9 +22,9 @@ jobs:
     steps:
       - attach_workspace:
           at: /tmp/.
-      - run: mkdir -p Test
-      - run: ctest --no-compress-output -T Test || true
-      - run: python3 buildutils/ctest2JUnit.py build buildutils/CTest2JUnit.xsl > build/Test/results.xml #https://stackoverflow.com/questions/6329215/how-to-get-ctest-results-in-hudson-jenkins
+      - run: cd build && mkdir -p Test
+      - run: cd build && ctest --no-compress-output -T Test || true
+      - run: cd build && python3 buildutils/ctest2JUnit.py build buildutils/CTest2JUnit.xsl > build/Test/results.xml #https://stackoverflow.com/questions/6329215/how-to-get-ctest-results-in-hudson-jenkins
       - store_test_results:
           path: build/Test
 
