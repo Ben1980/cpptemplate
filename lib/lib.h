@@ -38,7 +38,7 @@ TEST_CASE ("Test 1") {
   CHECK(true);
 }
 TEST_CASE ("Test 2") {
-  CHECK(true);
+  CHECK(false);
 }
 
 #endif
