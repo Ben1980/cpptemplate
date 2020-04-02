@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM debian:latest
 
 MAINTAINER Benjamin Mahr, <ben.mahr@gmail.com>
 
@@ -20,6 +20,12 @@ RUN apt-get update -y && apt-get upgrade -y && \
 	gzip \
 	sudo \
 	python3 \
+	python-dev \
+	python-pip \
+	python3-venv \
+	python3-lxml \
+	libssl-dev \
+	libffi-dev \
 	ca-certificates && \
 	apt-get autoclean && \
     	apt-get autoremove && \
