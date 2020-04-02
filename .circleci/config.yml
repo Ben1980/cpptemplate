@@ -24,9 +24,9 @@ jobs:
           at: .
       - run: cd build && mkdir -p Test && ls
       - run: cd build && ctest --no-compress-output -T Test || true
-      - run: cd build && python3 buildutils/ctest2JUnit.py build buildutils/CTest2JUnit.xsl > build/Test/results.xml #https://stackoverflow.com/questions/6329215/how-to-get-ctest-results-in-hudson-jenkins
+      - run: cd build && python3 buildutils/ctest2JUnit.py . buildutils/CTest2JUnit.xsl > Test/results.xml #https://stackoverflow.com/questions/6329215/how-to-get-ctest-results-in-hudson-jenkins
       - store_test_results:
-          path: build/Test
+          path: Test
 
 workflows:
   version: 2
