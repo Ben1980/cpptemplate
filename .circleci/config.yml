@@ -22,9 +22,9 @@ jobs:
     steps:
       - attach_workspace:
           at: /tmp/.
-      - run: cd build && mkdir -p Test
-      - run: cd build && ctest --no-compress-output -T Test || true
-      - run: cd build && python3 buildutils/ctest2JUnit.py build buildutils/CTest2JUnit.xsl > build/Test/results.xml #https://stackoverflow.com/questions/6329215/how-to-get-ctest-results-in-hudson-jenkins
+      - run: mkdir -p Test && ls
+      - run: ctest --no-compress-output -T Test || true
+      - run: python3 buildutils/ctest2JUnit.py build buildutils/CTest2JUnit.xsl > build/Test/results.xml #https://stackoverflow.com/questions/6329215/how-to-get-ctest-results-in-hudson-jenkins
       - store_test_results:
           path: build/Test
 
