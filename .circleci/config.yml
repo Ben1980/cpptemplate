@@ -6,24 +6,32 @@ jobs:
     steps:
       - checkout
       - run: ./../../vcpkg/vcpkg install fmt doctest
-      - run: mkdir -p build && cd build && mkdir -p Test
+      - run: mkdir -p build
       - run: cd build && cmake -DCMAKE_TOOLCHAIN_FILE=/vcpkg/scripts/buildsystems/vcpkg.cmake .. && cmake --build . --config Release
-      - run: cd build && ctest --no-compress-output -T Test || true
+      - persist_to_workspace:
+          root: .
+          paths: build
+      #- run: cd build && ctest --no-compress-output -T Test || true
+      #- run: python3 buildutils/ctest2JUnit.py build buildutils/CTest2JUnit.xsl > build/Test/results.xml #https://stackoverflow.com/questions/6329215/how-to-get-ctest-results-in-hudson-jenkins
+      #- store_test_results:
+      #    path: build/Test
+  test:
+    docker:
+      - image: dockerben/cpptemplate:latest
+    steps:
+      - attach_workspace:
+          at: /tmp/.
+      - run: mkdir -p Test
+      - run: ctest --no-compress-output -T Test || true
       - run: python3 buildutils/ctest2JUnit.py build buildutils/CTest2JUnit.xsl > build/Test/results.xml #https://stackoverflow.com/questions/6329215/how-to-get-ctest-results-in-hudson-jenkins
       - store_test_results:
           path: build/Test
-  #test:
-   # docker:
-    #  - image: dockerben/cpptemplate:latest
-    #steps:
-     # - run: cd build && ctest --no-compress-output -T Test || true
-      #- run: python3 buildutils/ctest2JUnit.py build buildutils/CTest2JUnit.xsl > build/Test/results.xml #https://stackoverflow.com/questions/6329215/how-to-get-ctest-results-in-hudson-jenkins
-      #- store_test_results:
-       #   path: build/Test
 
 workflows:
   version: 2
-  build:
+  build-and-test:
     jobs:
       - build
-      #- test
+      - test:
+          requires:
+            - build
