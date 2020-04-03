@@ -80,19 +80,22 @@ $(function() {
 <div class="image">
 <img src="header.png" alt=""/>
 </div>
-   <h1>Installation</h1>
-<p>OS X &amp; Linux:</p>
-<div class="fragment"><div class="line">npm install my-crazy-module --save</div>
-</div><!-- fragment --><p>Windows:</p>
-<div class="fragment"><div class="line">edit autoexec.bat</div>
-</div><!-- fragment --><h1>Usage example</h1>
+   <h1>Getting Started</h1>
+<p>To build it execute:</p><ul>
+<li><code>~\PROJECTNAME\build\cmake .. -DCMAKE_TOOLCHAIN_FILE={YOUR_PATH_TO_VCPKG}/scripts/buildsystems/vcpkg.cmake</code></li>
+<li><code>~\PROJECTNAME\build\cmake --build . --config Release</code></li>
+</ul>
+<p>You can execute the program by <code>./PROJECTNAME</code></p>
+<h2>Prerequisites/Dependencies</h2>
+<ul>
+<li><a href="https://cmake.org/">cmake</a> Open-Source, cross-platform build tool</li>
+<li><a href="https://fmt.dev/latest/index.html">fmt</a> External library used for formatting and printing results</li>
+<li><a href="https://github.com/onqtam/doctest">doctest</a> Feature-rich C++11/14/17/20 single-header testing framework for unit tests and TDD</li>
+</ul>
+<h1>Usage example</h1>
 <p>A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.</p>
 <p><em>For more examples and usage, please refer to the [Wiki][wiki].</em></p>
-<h1>Development setup</h1>
-<p>Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.</p>
-<div class="fragment"><div class="line">make install</div>
-<div class="line">npm test</div>
-</div><!-- fragment --><h1>Release History</h1>
+<h1>Release History</h1>
 <ul>
 <li>0.2.1<ul>
 <li>CHANGE: Update docs (module code remains unchanged)</li>
@@ -118,9 +121,11 @@ $(function() {
 </li>
 </ul>
 <h1>Meta</h1>
-<p>Your Name – <a href="https://twitter.com/dbader_org">@YourTwitter</a> – <a href="#" onclick="location.href='mai'+'lto:'+'You'+'rE'+'mai'+'l@'+'exa'+'mp'+'le.'+'co'+'m'; return false;">YourE<span style="display: none;">.nosp@m.</span>mail<span style="display: none;">.nosp@m.</span>@exam<span style="display: none;">.nosp@m.</span>ple.<span style="display: none;">.nosp@m.</span>com</a></p>
-<p>Distributed under the XYZ license. See <code>LICENSE</code> for more information.</p>
-<p><a href="https://github.com/dbader/">https://github.com/yourname/github-link</a></p>
+<p><b>Benjamin Mahr</b> – <a href="https://github.com/Ben1980">GitHub</a> <br  />
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;– <a href="https://www.linkedin.com/in/benjamin-mahr-728a1639/">LinkedIn</a> <br  />
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;– <a href="https://twitter.com/BenMahr">Twitter</a> <br  />
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;– <a href="ben.amhr@gmail.com">Mail</a></p>
+<p>Distributed under the MIT license. See <code>LICENSE</code> for more information.</p>
 <h1>Contributing</h1>
 <ol type="1">
 <li>Fork it (<a href="https://github.com/yourname/yourproject/fork">https://github.com/yourname/yourproject/fork</a>)</li>
