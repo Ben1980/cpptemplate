@@ -1,8 +1,8 @@
 # cpptemplate {#mainpage}
 > Short blurb about what your product does.
 
-[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/Ben1980/cpptemplate)
-[![Documentation](https://github.com/Ben1980/cpptemplate/workflows/Generate%20Documentation/badge.svg)](https://ben1980.github.io/cpptemplate/)
+[![CircleCI](https://img.shields.io/circleci/build/gh/Ben1980/cpptemplate)](https://circleci.com/gh/Ben1980/cpptemplate)
+[![Documentation](https://github.com/Ben1980/cpptemplate/workflows/Documentation/badge.svg)](https://ben1980.github.io/cpptemplate/)
 
 One to two paragraph statement about your product and what it does.
 
