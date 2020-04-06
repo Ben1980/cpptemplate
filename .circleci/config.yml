@@ -10,8 +10,15 @@ jobs:
     steps:
       - checkout
       - run: ./../../vcpkg/vcpkg install fmt doctest
-      - run: mkdir -p build && mv buildutils build/buildutils
-      - run: cd build && cmake -DCMAKE_TOOLCHAIN_FILE=/vcpkg/scripts/buildsystems/vcpkg.cmake .. && cmake --build . --config Release
+      - run: 
+          command: |
+            mkdir -p build
+            mv buildutils build/buildutils
+      - run:
+          command: |
+            cd build 
+            cmake -DCMAKE_TOOLCHAIN_FILE=/vcpkg/scripts/buildsystems/vcpkg.cmake .. 
+            cmake --build . --config Release
       - persist_to_workspace:
           root: .
           paths: build
