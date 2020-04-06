@@ -1,8 +1,12 @@
 version: 2.1
-jobs:
-  build:
+executors:
+  exectr:
     docker:
       - image: dockerben/cpptemplate:latest
+
+jobs:
+  build:
+    executor: exectr
     steps:
       - checkout
       - run: ./../../vcpkg/vcpkg install fmt doctest
@@ -13,14 +17,13 @@ jobs:
           paths: build
 
   test:
-    docker:
-      - image: dockerben/cpptemplate:latest
+    executor: exectr
     steps:
       - attach_workspace:
           at: .
       - run: cd build && mkdir -p Test
       - run: cd build && ctest --no-compress-output -T Test || true
-      - run: python3 build/buildutils/ctest2JUnit.py build build/buildutils/CTest2JUnit.xsl > build/Test/results.xml #https://stackoverflow.com/questions/6329215/how-to-get-ctest-results-in-hudson-jenkins
+      - run: python3 build/buildutils/ctest2JUnit.py build build/buildutils/CTest2JUnit.xsl > build/Test/results.xml
       - store_test_results:
           path: build/Test
 
