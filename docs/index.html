@@ -74,23 +74,30 @@ $(function() {
 <div class="textblock"><blockquote class="doxtable">
 <p>Short blurb about what your product does. </p>
 </blockquote>
-<p><a href="https://npmjs.org/package/datadog-metrics"><img src="https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square" alt="NPM Version" class="inline"/>
-</a> <a href="https://travis-ci.org/dbader/node-datadog-metrics"><img src="https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square" alt="Build Status" class="inline"/>
-</a> <a href="https://npmjs.org/package/datadog-metrics"><img src="https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square" alt="Downloads Stats" class="inline"/>
+<p><a href="https://circleci.com/gh/Ben1980/cpptemplate"><img src="https://circleci.com/gh/circleci/circleci-docs.svg?style=svg" alt="CircleCI" class="inline"/>
+</a> <a href="https://ben1980.github.io/cpptemplate/"><object type="image/svg+xml" data="https://github.com/Ben1980/cpptemplate/workflows/Generate%20Documentation/badge.svg" alt="Generate Documentation"></object>
+/>
 </a></p>
 <p>One to two paragraph statement about your product and what it does.</p>
 <div class="image">
 <img src="header.png" alt="header.png"/>
 </div>
-   <h2>Installation</h2>
-<p>OS X &amp; Linux:</p>
-<div class="fragment"><div class="line">npm install my-crazy-module --save</div></div><!-- fragment --><p>Windows:</p>
-<div class="fragment"><div class="line">edit autoexec.bat</div></div><!-- fragment --><h2>Usage example</h2>
+   <h2>Getting Started</h2>
+<p>To build it execute:</p><ul>
+<li><code>~\PROJECTNAME\build\cmake .. -DCMAKE_TOOLCHAIN_FILE={YOUR_PATH_TO_VCPKG}/scripts/buildsystems/vcpkg.cmake</code></li>
+<li><code>~\PROJECTNAME\build\cmake --build . --config Release</code></li>
+</ul>
+<p>You can execute the program by <code>./PROJECTNAME</code></p>
+<h3>Prerequisites/Dependencies</h3>
+<ul>
+<li><a href="https://cmake.org/">cmake</a> Open-Source, cross-platform build tool</li>
+<li><a href="https://fmt.dev/latest/index.html">fmt</a> External library used for formatting and printing results</li>
+<li><a href="https://github.com/onqtam/doctest">doctest</a> Feature-rich C++11/14/17/20 single-header testing framework for unit tests and TDD</li>
+</ul>
+<h2>Usage example</h2>
 <p>A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.</p>
-<p><em>For more examples and usage, please refer to the <a href="https://github.com/yourname/yourproject/wiki">Wiki</a>.</em></p>
-<h2>Development setup</h2>
-<p>Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.</p>
-<div class="fragment"><div class="line">make install</div><div class="line">npm test</div></div><!-- fragment --><h2>Release History</h2>
+<p><em>For more examples and usage, please refer to the [Wiki][wiki].</em></p>
+<h2>Release History</h2>
 <ul>
 <li>0.2.1<ul>
 <li>CHANGE: Update docs (module code remains unchanged)</li>
@@ -116,17 +123,26 @@ $(function() {
 </li>
 </ul>
 <h2>Meta</h2>
-<p>Your Name – <a href="https://twitter.com/dbader_org">@YourTwitter</a> – <a href="#" onclick="location.href='mai'+'lto:'+'You'+'rE'+'mai'+'l@'+'exa'+'mp'+'le.'+'co'+'m'; return false;">YourE<span style="display: none;">.nosp@m.</span>mail<span style="display: none;">.nosp@m.</span>@exam<span style="display: none;">.nosp@m.</span>ple.<span style="display: none;">.nosp@m.</span>com</a></p>
-<p>Distributed under the XYZ license. See <code>LICENSE</code> for more information.</p>
-<p><a href="https://github.com/dbader/">https://github.com/yourname/github-link</a></p>
+<p><b>Benjamin Mahr</b> – <a href="https://github.com/Ben1980">GitHub</a></p>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;– <a href="https://www.linkedin.com/in/benjamin-mahr-728a1639/">LinkedIn</a></p>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;– <a href="https://twitter.com/BenMahr">Twitter</a></p>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;– <a href="ben.amhr@gmail.com">Mail</a></p>
+<p>Distributed under the MIT license. See <code>LICENSE</code> for more information.</p>
 <h2>Contributing</h2>
 <ol type="1">
-<li>Fork it (<a href="https://github.com/yourname/yourproject/fork">https://github.com/yourname/yourproject/fork</a>)</li>
+<li>Fork it (<a href="https://github.com/Ben1980/cpptemplate/fork">https://github.com/Ben1980/cpptemplate/fork</a>)</li>
 <li>Create your feature branch (<code>git checkout -b feature/fooBar</code>)</li>
 <li>Commit your changes (&lsquo;git commit -am 'Add some fooBar&rsquo;<code>)</code></li>
 <li><code>Push to the branch (</code>git push origin feature/fooBar`)</li>
-<li>Create a new Pull Request </li>
+<li>Create a new Pull Request</li>
 </ol>
+<h2>Acknowledgments</h2>
+<ul>
+<li>Transforming CTest results int JUnit notation – <a href="https://stackoverflow.com/a/21688776/1541782">https://stackoverflow.com/a/21688776/1541782</a></li>
+<li><a class="el" href="README_8md.html">README.md</a> template inspiration – <a href="https://github.com/dbader/readme-template">https://github.com/dbader/readme-template</a></li>
+<li>Doxygen GitHub-Action – <a href="https://github.com/mattnotmitt/doxygen-action">https://github.com/mattnotmitt/doxygen-action</a></li>
+<li>gh-pages GitHub-Action – <a href="https://github.com/peaceiris/actions-gh-pages">https://github.com/peaceiris/actions-gh-pages</a> </li>
+</ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
