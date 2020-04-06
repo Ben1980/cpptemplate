@@ -2,7 +2,7 @@
 > Short blurb about what your product does.
 
 [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/Ben1980/cpptemplate)
-![Generate Documentation](https://github.com/Ben1980/cpptemplate/workflows/Generate%20Documentation/badge.svg)
+[![Generate Documentation](https://github.com/Ben1980/cpptemplate/workflows/Generate%20Documentation/badge.svg)](https://ben1980.github.io/cpptemplate/)
 
 One to two paragraph statement about your product and what it does.
 
@@ -54,18 +54,16 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 
 ## Contributing
 
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
+1. Fork it (<https://github.com/Ben1980/cpptemplate/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
 
-<!-- Markdown link & img dfn's -->
-<!--[circleci-url]: (https://circleci.com/gh/Ben1980/cpptemplate)
-[circleci-image]: (https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)
-[doc-image]: (https://github.com/Ben1980/cpptemplate/workflows/Generate%20Documentation/badge.svg)-->
-
 ## Acknowledgments
 
 - Transforming CTest results int JUnit notation – https://stackoverflow.com/a/21688776/1541782
 - README.md template inspiration – https://github.com/dbader/readme-template
+- Doxygen GitHub-Action – https://github.com/mattnotmitt/doxygen-action
+- gh-pages GitHub-Action – https://github.com/peaceiris/actions-gh-pages
+
