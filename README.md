@@ -1,14 +1,6 @@
 # cpptemplate {#mainpage}
 > Short blurb about what your product does.
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/Ben1980/cpptemplate)
 ![Generate Documentation](https://github.com/Ben1980/cpptemplate/workflows/Generate%20Documentation/badge.svg)
 
@@ -16,34 +8,25 @@ One to two paragraph statement about your product and what it does.
 
 ![](images/header.png)
 
-## Installation
+## Getting Started
 
-OS X & Linux:
+To build it execute:
+- `~\PROJECTNAME\build\cmake .. -DCMAKE_TOOLCHAIN_FILE={YOUR_PATH_TO_VCPKG}/scripts/buildsystems/vcpkg.cmake`
+- `~\PROJECTNAME\build\cmake --build . --config Release`
 
-```sh
-npm install my-crazy-module --save
-```
+You can execute the program by `./PROJECTNAME`
 
-Windows:
+### Prerequisites/Dependencies
 
-```sh
-edit autoexec.bat
-```
+- [cmake](https://cmake.org/) Open-Source, cross-platform build tool
+- [fmt](https://fmt.dev/latest/index.html) External library used for formatting and printing results
+- [doctest](https://github.com/onqtam/doctest) Feature-rich C++11/14/17/20 single-header testing framework for unit tests and TDD
 
 ## Usage example
 
 A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
 
 _For more examples and usage, please refer to the [Wiki][wiki]._
-
-## Development setup
-
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
-
-```sh
-make install
-npm test
-```
 
 ## Release History
 
@@ -62,11 +45,12 @@ npm test
 
 ## Meta
 
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
+**Benjamin Mahr** – [GitHub](https://github.com/Ben1980)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;– [LinkedIn](https://www.linkedin.com/in/benjamin-mahr-728a1639/)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;– [Twitter](https://twitter.com/BenMahr)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;– [Mail](ben.amhr@gmail.com)
 
-Distributed under the XYZ license. See ``LICENSE`` for more information.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
+Distributed under the MIT license. See ``LICENSE`` for more information.
 
 ## Contributing
 
@@ -80,3 +64,8 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 <!--[circleci-url]: (https://circleci.com/gh/Ben1980/cpptemplate)
 [circleci-image]: (https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)
 [doc-image]: (https://github.com/Ben1980/cpptemplate/workflows/Generate%20Documentation/badge.svg)-->
+
+## Acknowledgments
+
+- Transforming CTest results int JUnit notation – https://stackoverflow.com/a/21688776/1541782
+- README.md template inspiration – https://github.com/dbader/readme-template
