@@ -28,9 +28,17 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      - run: cd build && mkdir -p Test
-      - run: cd build && ctest --no-compress-output -T Test || true
-      - run: python3 build/buildutils/ctest2JUnit.py build build/buildutils/CTest2JUnit.xsl > build/Test/results.xml
+      - run: 
+          command: |
+            cd build 
+            mkdir -p Test
+      - run: 
+          command: |
+            cd build 
+            ctest --no-compress-output -T Test || true
+      - run: 
+          command: |
+            python3 build/buildutils/ctest2JUnit.py build build/buildutils/CTest2JUnit.xsl > build/Test/results.xml
       - store_test_results:
           path: build/Test
 
