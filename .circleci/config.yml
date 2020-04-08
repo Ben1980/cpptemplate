@@ -9,12 +9,16 @@ jobs:
     executor: exectr
     steps:
       - checkout
-      - run: ./../../vcpkg/vcpkg install fmt doctest
       - run:
+          name: Install vcpkg dependencies
+          command: ./../../vcpkg/vcpkg install fmt doctest
+      - run:
+          name: Create build directories
           command: |
             mkdir -p build
             mv buildutils build/buildutils
       - run:
+          name: Setup cmake and build artifacts
           command: |
             cd build
             cmake -DCMAKE_TOOLCHAIN_FILE=/vcpkg/scripts/buildsystems/vcpkg.cmake ..
@@ -29,14 +33,17 @@ jobs:
       - attach_workspace:
           at: .
       - run:
+          name: Create test directory
           command: |
             cd build
             mkdir -p Test
       - run:
+          name: Execute Tests
           command: |
             cd build
             ctest --no-compress-output -T Test || true
       - run:
+          name: Transform test results into JUnit conform notation
           command: |
             python3 build/buildutils/ctest2JUnit.py build build/buildutils/CTest2JUnit.xsl > build/Test/results.xml
       - store_test_results:
