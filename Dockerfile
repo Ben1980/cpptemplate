@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM debian:stable-slim
 
 LABEL maintainer="ben.mahr@gmail.com" \
       description="Image which consists of C++ related build tools." \
