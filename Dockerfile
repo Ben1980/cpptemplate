@@ -22,9 +22,7 @@ RUN apt-get update -y && apt-get upgrade -y && \
 	gzip \
 	sudo \
 	python3 \
-	python-dev \
-	python-pip \
-	python3-venv \
+	python3-defusedxml \
 	python3-lxml \
 	libssl-dev \
 	libffi-dev \
