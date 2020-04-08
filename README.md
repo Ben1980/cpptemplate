@@ -2,6 +2,7 @@
 > Short blurb about what your product does.
 
 [![CircleCI](https://img.shields.io/circleci/build/gh/Ben1980/cpptemplate)](https://circleci.com/gh/Ben1980/cpptemplate)
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/ben1980/cpptemplate)](https://www.codefactor.io/repository/github/ben1980/cpptemplate)
 [![Documentation](https://github.com/Ben1980/cpptemplate/workflows/Documentation/badge.svg)](https://ben1980.github.io/cpptemplate/)
 [![License](https://img.shields.io/github/license/Ben1980/cpptemplate)](https://github.com/Ben1980/cpptemplate/blob/master/LICENSE)
 
