@@ -1,6 +1,8 @@
 FROM debian:latest
 
-MAINTAINER Benjamin Mahr, <ben.mahr@gmail.com>
+LABEL maintainer="ben.mahr@gmail.com" \
+      description="Image which consists of C++ related build tools." \
+      version="1.0"
 
 ENV DEBIAN_FRONTEND noninteractive
 
