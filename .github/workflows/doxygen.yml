@@ -2,13 +2,12 @@ name: Documentation
 
 on:
   push:
-    branches: 
+    branches:
       - master
   pull_request:
-    branches: 
+    branches:
       - master
   page_build:
-      
 
 jobs:
   doxygen:
@@ -25,4 +24,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
           commit_message: '[ci skip] ${{ github.event.head_commit.message }}'
-          
