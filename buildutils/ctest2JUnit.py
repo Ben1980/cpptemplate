@@ -1,4 +1,5 @@
 from lxml import etree
+from defusedxml.lxml import fromstring
 import io
 import sys
 
@@ -11,8 +12,7 @@ xslfile = open(sys.argv[2], 'r')
 xmlcontent = xmlfile.read()
 xslcontent = xslfile.read()
 
-#xmldoc = etree.parse(io.StringIO(xmlcontent))
-xmldoc = etree.parse(sys.argv[1]+"/Testing/"+dirname+"/Test.xml")
+xmldoc = fromstring(sys.argv[1]+"/Testing/"+dirname+"/Test.xml")
 xslt_root = etree.XML(xslcontent)
 transform = etree.XSLT(xslt_root)
 
