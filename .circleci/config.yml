@@ -10,14 +10,14 @@ jobs:
     steps:
       - checkout
       - run: ./../../vcpkg/vcpkg install fmt doctest
-      - run: 
+      - run:
           command: |
             mkdir -p build
             mv buildutils build/buildutils
       - run:
           command: |
-            cd build 
-            cmake -DCMAKE_TOOLCHAIN_FILE=/vcpkg/scripts/buildsystems/vcpkg.cmake .. 
+            cd build
+            cmake -DCMAKE_TOOLCHAIN_FILE=/vcpkg/scripts/buildsystems/vcpkg.cmake ..
             cmake --build . --config Release
       - persist_to_workspace:
           root: .
@@ -28,15 +28,15 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      - run: 
+      - run:
           command: |
-            cd build 
+            cd build
             mkdir -p Test
-      - run: 
+      - run:
           command: |
-            cd build 
+            cd build
             ctest --no-compress-output -T Test || true
-      - run: 
+      - run:
           command: |
             python3 build/buildutils/ctest2JUnit.py build build/buildutils/CTest2JUnit.xsl > build/Test/results.xml
       - store_test_results:
