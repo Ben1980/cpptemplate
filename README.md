@@ -20,9 +20,9 @@ You can execute the program by `./PROJECTNAME`
 
 ### Prerequisites/Dependencies
 
-- [cmake](https://cmake.org/) Open-Source, cross-platform build tool
-- [fmt](https://fmt.dev/latest/index.html) External library used for formatting and printing results
-- [doctest](https://github.com/onqtam/doctest) Feature-rich C++11/14/17/20 single-header testing framework for unit tests and TDD
+- [cmake][cmake-url] Open-Source, cross-platform build tool
+- [fmt][fmt-url] External library used for formatting and printing results
+- [doctest][doctest-url] Feature-rich C++11/14/17/20 single-header testing framework for unit tests and TDD
 
 ## Usage example
 
@@ -47,10 +47,10 @@ _For more examples and usage, please refer to the [Wiki][wiki]._
 
 ## Meta
 
-**Benjamin Mahr** – [GitHub](https://github.com/Ben1980)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;– [LinkedIn](https://www.linkedin.com/in/benjamin-mahr-728a1639/)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;– [Twitter](https://twitter.com/BenMahr)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;– [Mail](ben.amhr@gmail.com)
+**Benjamin Mahr** – [GitHub][rep-url]  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;– [LinkedIn][linkedin-url]  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;– [Twitter][twitter-url]  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;– [Mail][mail]
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
@@ -77,4 +77,11 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [codefactor-badge]: (https://img.shields.io/codefactor/grade/github/ben1980/cpptemplate)
 [documentation-badge]: (https://img.shields.io/github/workflow/status/Ben1980/cpptemplate/Documentation?label=Documentation)
 [license-badge]: (https://img.shields.io/github/license/Ben1980/cpptemplate)
+[cmake-url]: (https://cmake.org/)
+[fmt-url]: (https://fmt.dev/latest/index.html)
+[doctest-url]: (https://github.com/onqtam/doctest)
+[rep-url]: (https://github.com/Ben1980)
+[linkedin-url]: (https://www.linkedin.com/in/benjamin-mahr-728a1639/)
+[twitter-url]: (https://twitter.com/BenMahr)
+[mail]: (ben.amhr@gmail.com)
 
