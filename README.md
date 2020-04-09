@@ -1,12 +1,12 @@
 # cpptemplate {#mainpage}
-> A c++ GitHub template project consisting of a circleci build pipeline utilising cmake, ctest, vcpkg, and an automated documentation deployment via GitHub-Actions at gh-pages branch.
+> A C++ GitHub template project.
 
 [![CircleCI][circleci-badge]][circleci-url]
 [![CodeFactor Grade][codefactor-badge]][codefactor-url]
 [![Documentation][documentation-badge]][documentation-url]
 [![License][license-badge]][license-url]
 
-One to two paragraph statement about your product and what it does.
+A C++ GitHub template project consisting of a circleci build pipeline utilising cmake, ctest, vcpkg, and an automated documentation deployment via GitHub-Actions at gh-pages branch.
 
 ![](images/header.png)
 
@@ -37,27 +37,14 @@ To change/add dependencies:
 - [cmake][cmake-url] Open-Source, cross-platform build tool
 - [fmt][fmt-url] External library used for formatting and printing results
 - [doctest][doctest-url] Feature-rich C++11/14/17/20 single-header testing framework for unit tests and TDD
-
-## Usage example
-
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
-
-_For more examples and usage, please refer to the [Wiki][wiki]._
+- [vcpkg][vcpkg-url] C++ Library Manager for Windows, Linux, and MacOS
 
 ## Release History
 
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
-* 0.1.0
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
-* 0.0.1
-    * Work in progress
+* 1.0.0
+    * ADD: Customized docker image for C++/cmake builds with vcpkg as dependency manager
+    * ADD: GitHub action to generate documentation
+    * ADD: GitHub project template
 
 ## Meta
 
@@ -99,4 +86,4 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [linkedin-url]: https://www.linkedin.com/in/benjamin-mahr-728a1639/
 [twitter-url]: https://twitter.com/BenMahr
 [mail]: ben.amhr@gmail.com
-
+[vcpkg-url]: https://github.com/microsoft/vcpkg
