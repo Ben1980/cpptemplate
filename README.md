@@ -41,7 +41,7 @@ To change/add dependencies:
 
 ## Release History
 
-* 1.0.0
+* [1.0.0][v1.0.0]
     * ADD: Customized docker image for C++/cmake builds with vcpkg as dependency manager
     * ADD: GitHub action to generate documentation
     * ADD: GitHub project template
@@ -87,3 +87,5 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [twitter-url]: https://twitter.com/BenMahr
 [mail]: ben.amhr@gmail.com
 [vcpkg-url]: https://github.com/microsoft/vcpkg
+
+[v1.0.0]: https://github.com/Ben1980/cpptemplate/releases/tag/v1.0.0
