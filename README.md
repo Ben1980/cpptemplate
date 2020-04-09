@@ -34,10 +34,10 @@ To change/add dependencies:
 
 ### Prerequisites/Dependencies
 
-- [cmake][cmake-url] Open-Source, cross-platform build tool
-- [fmt][fmt-url] External library used for formatting and printing results
-- [doctest][doctest-url] Feature-rich C++11/14/17/20 single-header testing framework for unit tests and TDD
-- [vcpkg][vcpkg-url] C++ Library Manager for Windows, Linux, and MacOS
+- [cmake][cmake-url] – Open-Source, cross-platform build tool
+- [fmt][fmt-url] – External library used for formatting and printing results
+- [doctest][doctest-url] – Feature-rich C++11/14/17/20 single-header testing framework for unit tests and TDD
+- [vcpkg][vcpkg-url] – C++ Library Manager for Windows, Linux, and MacOS
 
 ## Release History
 
