@@ -1,5 +1,5 @@
 # cpptemplate {#mainpage}
-> Short blurb about what your product does.
+> A c++ GitHub template project consisting of a circleci build pipeline utilising cmake, ctest, vcpkg, and an automated documentation deployment via GitHub-Actions at gh-pages branch.
 
 [![CircleCI][circleci-badge]][circleci-url]
 [![CodeFactor Grade][codefactor-badge]][codefactor-url]
@@ -12,11 +12,24 @@ One to two paragraph statement about your product and what it does.
 
 ## Getting Started
 
-To build it execute:
-- `~\PROJECTNAME\build\cmake .. -DCMAKE_TOOLCHAIN_FILE={YOUR_PATH_TO_VCPKG}/scripts/buildsystems/vcpkg.cmake`
-- `~\PROJECTNAME\build\cmake --build . --config Release`
+To build the project:
+- Setup toolchain `~\PROJECTNAME\build\cmake .. -DCMAKE_TOOLCHAIN_FILE={YOUR_PATH_TO_VCPKG}/scripts/buildsystems/vcpkg.cmake`
+- Build `~\PROJECTNAME\build\cmake --build . --config Release`
+- You can execute the program by `./build/app/PROJECTNAME`
 
-You can execute the program by `./PROJECTNAME`
+To update the docker image:
+- Edit the Dockerfile to your needs
+- Build docker image `sudo docker build -t IMAGENAME .`
+- Tag docker image with dockerhub username `sudo docker tag IMAGENAME:TAG DOCKERHUBUSERNAME/IMAGENAME:TAG`
+- Push docker image to dockerhub `sudo docker push DOCKERHUBUSERNAME/IMAGENAME:TAG`
+
+To change/add dependencies:
+- Edit the vcpkg part of `.cirlceci/config.yml` to your needs
+```
+- run:
+    name: Install vcpkg dependencies
+    command: ./../../vcpkg/vcpkg install DEPENDENCIES
+```
 
 ### Prerequisites/Dependencies
 
