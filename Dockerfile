@@ -6,7 +6,7 @@ LABEL maintainer="ben.mahr@gmail.com" \
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update -y && apt-get upgrade -y && \
+RUN apt-get update -y && \
     apt-get install -y --no-install-recommends apt-utils \
 	git \
 	openssh-client \
@@ -37,7 +37,9 @@ ENV CMAKE_TOOLCHAIN_FILE ${VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake
 
 RUN git clone https://github.com/microsoft/vcpkg.git && \
 	.${VCPKG_ROOT}/bootstrap-vcpkg.sh -disableMetrics && \
-	sudo .${VCPKG_ROOT}/vcpkg integrate install
+	sudo .${VCPKG_ROOT}/vcpkg integrate install && \
+	rm -rf ${VCPKG_ROOT}/buildtrees/* && \
+	rm -rf ${VCPKG_ROOT}/downloads/*
 
 ENV DEBIAN_FRONTEND teletype
 	
