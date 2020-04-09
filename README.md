@@ -68,6 +68,7 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 - README.md template inspiration – https://github.com/dbader/readme-template
 - Doxygen GitHub-Action – https://github.com/mattnotmitt/doxygen-action
 - gh-pages GitHub-Action – https://github.com/peaceiris/actions-gh-pages
+- Dockerfile Tips – https://blog.container-solutions.com/6-dockerfile-tips-official-images
 
 [circleci-url]: (https://circleci.com/gh/Ben1980/cpptemplate)
 [codefactor-url]: (https://www.codefactor.io/repository/github/ben1980/cpptemplate)
