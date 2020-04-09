@@ -13,8 +13,9 @@ One to two paragraph statement about your product and what it does.
 ## Getting Started
 
 To build the project:
-- Setup toolchain `~\PROJECTNAME\build\cmake .. -DCMAKE_TOOLCHAIN_FILE={YOUR_PATH_TO_VCPKG}/scripts/buildsystems/vcpkg.cmake`
-- Build `~\PROJECTNAME\build\cmake --build . --config Release`
+- Setup toolchain `~/PROJECTNAME/build/cmake .. -DCMAKE_TOOLCHAIN_FILE={YOUR_PATH_TO_VCPKG}/scripts/buildsystems/vcpkg.cmake`
+- Build `~/PROJECTNAME/build/cmake --build . --config Release`
+- Execute the tests `~/PROJECTNAME/build/ctest`
 - You can execute the program by `./build/app/PROJECTNAME`
 
 To update the docker image:
