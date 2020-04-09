@@ -70,19 +70,19 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 - gh-pages GitHub-Action – https://github.com/peaceiris/actions-gh-pages
 - Dockerfile Tips – https://blog.container-solutions.com/6-dockerfile-tips-official-images
 
-[circleci-url]: (https://circleci.com/gh/Ben1980/cpptemplate)
-[codefactor-url]: (https://www.codefactor.io/repository/github/ben1980/cpptemplate)
-[documentation-url]: (https://ben1980.github.io/cpptemplate/)
-[license-url]: (https://github.com/Ben1980/cpptemplate/blob/master/LICENSE)
-[circleci-badge]: (https://img.shields.io/circleci/build/gh/Ben1980/cpptemplate)
-[codefactor-badge]: (https://img.shields.io/codefactor/grade/github/ben1980/cpptemplate)
-[documentation-badge]: (https://img.shields.io/github/workflow/status/Ben1980/cpptemplate/Documentation?label=Documentation)
-[license-badge]: (https://img.shields.io/github/license/Ben1980/cpptemplate)
-[cmake-url]: (https://cmake.org/)
-[fmt-url]: (https://fmt.dev/latest/index.html)
-[doctest-url]: (https://github.com/onqtam/doctest)
-[rep-url]: (https://github.com/Ben1980)
-[linkedin-url]: (https://www.linkedin.com/in/benjamin-mahr-728a1639/)
-[twitter-url]: (https://twitter.com/BenMahr)
-[mail]: (ben.amhr@gmail.com)
+[circleci-url]: https://circleci.com/gh/Ben1980/cpptemplate
+[codefactor-url]: https://www.codefactor.io/repository/github/ben1980/cpptemplate
+[documentation-url]: https://ben1980.github.io/cpptemplate/
+[license-url]: https://github.com/Ben1980/cpptemplate/blob/master/LICENSE
+[circleci-badge]: https://img.shields.io/circleci/build/gh/Ben1980/cpptemplate
+[codefactor-badge]: https://img.shields.io/codefactor/grade/github/ben1980/cpptemplate
+[documentation-badge]: https://img.shields.io/github/workflow/status/Ben1980/cpptemplate/Documentation?label=Documentation
+[license-badge]: https://img.shields.io/github/license/Ben1980/cpptemplate
+[cmake-url]: https://cmake.org/
+[fmt-url]: https://fmt.dev/latest/index.html
+[doctest-url]: https://github.com/onqtam/doctest
+[rep-url]: https://github.com/Ben1980
+[linkedin-url]: https://www.linkedin.com/in/benjamin-mahr-728a1639/
+[twitter-url]: https://twitter.com/BenMahr
+[mail]: ben.amhr@gmail.com
 
