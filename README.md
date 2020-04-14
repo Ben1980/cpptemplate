@@ -38,6 +38,7 @@ To change/add dependencies:
 - [fmt][fmt-url] – External library used for formatting and printing results
 - [doctest][doctest-url] – Feature-rich C++11/14/17/20 single-header testing framework for unit tests and TDD
 - [vcpkg][vcpkg-url] – C++ Library Manager for Windows, Linux, and MacOS
+- [python][python-url] – A programming language
 
 ## Release History
 
@@ -87,5 +88,6 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [twitter-url]: https://twitter.com/BenMahr
 [mail]: ben.amhr@gmail.com
 [vcpkg-url]: https://github.com/microsoft/vcpkg
+[python-url]: https://www.python.org/
 
 [v1.0.0]: https://github.com/Ben1980/cpptemplate/releases/tag/v1.0.0
