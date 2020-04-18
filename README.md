@@ -38,7 +38,7 @@ To change/add dependencies:
 - [fmt][fmt-url] – External library used for formatting and printing results
 - [doctest][doctest-url] – Feature-rich C++11/14/17/20 single-header testing framework for unit tests and TDD
 - [vcpkg][vcpkg-url] – C++ Library Manager for Windows, Linux, and MacOS
-- [python][python-url] – A programming language
+- [python 3][python-url] – A programming language used to convert ctest results with a xml transformation (xslt)
 
 ## Release History
 
@@ -66,7 +66,7 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 
 ## Acknowledgments
 
-- Transforming CTest results int JUnit notation – https://stackoverflow.com/a/21688776/1541782
+- Converting CTest results int JUnit notation – https://stackoverflow.com/a/21688776/1541782
 - README.md template inspiration – https://github.com/dbader/readme-template
 - Doxygen GitHub-Action – https://github.com/mattnotmitt/doxygen-action
 - gh-pages GitHub-Action – https://github.com/peaceiris/actions-gh-pages
