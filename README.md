@@ -66,7 +66,7 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 
 ## Acknowledgments
 
-- Converting CTest results int JUnit notation – https://stackoverflow.com/a/21688776/1541782
+- Converting CTest results int JUnit XML – https://stackoverflow.com/a/21688776/1541782
 - README.md template inspiration – https://github.com/dbader/readme-template
 - Doxygen GitHub-Action – https://github.com/mattnotmitt/doxygen-action
 - gh-pages GitHub-Action – https://github.com/peaceiris/actions-gh-pages
