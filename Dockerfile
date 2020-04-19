@@ -4,12 +4,9 @@ LABEL maintainer="ben.mahr@gmail.com" \
       description="Image which consists of C++ related build tools." \
       version="1.0"
 
-ENV DEBIAN_FRONTEND noninteractive
-
 RUN apt-get update -y && \
-    apt-get install -y --no-install-recommends apt-utils \
+    apt-get install -y --no-install-recommends \
 	git \
-	openssh-client \
 	openssh-server \
 	curl \
 	gcc \
@@ -40,6 +37,4 @@ RUN git clone https://github.com/microsoft/vcpkg.git && \
 	sudo .${VCPKG_ROOT}/vcpkg integrate install && \
 	rm -rf ${VCPKG_ROOT}/buildtrees/* && \
 	rm -rf ${VCPKG_ROOT}/downloads/*
-
-ENV DEBIAN_FRONTEND teletype
 	
